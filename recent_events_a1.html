@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Recent Events Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Recent Events - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a class ="active" href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 banner_3">
+                <div class = "page_title">
+                    <h2>RECENT EVENTS</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>Discovering new Worlds</h3>
+                <strong>Published January 2020</strong>
+                <div class = "articleimage">
+                    <img src = "images/recent_events_a1.jpg" alt = "UFO Gliding in an Unknown Planet" title = "Landscape Water Rock / Reimund Bertrams / Pixabay">
+                </div>
+                <p>One of the biggest questions scientists will always have and can not be certain about is whether there is life outside of our own planet. There is so much out there that we are not able to see yet, but hopefully we will be able to one day. Besides our own galaxy, there are billions of other galaxies in the universe, and within those galaxies there are billions of planets. Though we have not seen another exoplanet that can harbor life, it is incorrect to reject the idea that there cannot be life elsewhere in the universe. Within 50 light years from Earth, there are about a thousand exoplanets that may be rocky and have a similar composition to the Earth. TESS - Nasa's new exoplanet hunter space telescope - has been looking far into the space sky to find habitable planets that are relatively close to our own solar system. 
+                    <a href = "https://www.livescience.com/nasa-tess-thousands-of-exoplanets.html" title = "Accessed January 8, 2020" target = "_blank">[1]</a>
+                    This telescope exists outside of the Earth, orbiting around the planet about every 2 weeks, and is on a mission to help make a new discovery. Over the next couple of years, this powerful telescope will be able to find over 10,000 new planets. The way new planets used to be found is by having many ground-based telescopes looking for the brightest stars like our Sun. These planets would have to be orbiting their host star, and this would make the host star wobble very slightly due to the gravitational pull from the planet. The telescopes would be able to detect and measure this wobble, which is how they would know if there is a planet orbiting that specific star or not. The method that TESS uses to detect planets is by finding those stars due to their brightness, but then looking for rare dimming events that occur when a planet orbits in front of the star, reducing the light that can be observed by the telescope. When an event like this occurs, TESS can help determine not just if there is a planet or not, but the size of the planet as well as its orbit. By discovering more and more planets, they can eventually be studied further to identify if its habitable or not, and proceed with the mission to find life. The most recent planet TESS was able to find is known as TOI 700d, which lies 101.5 light years from Earth. Its roughly the same size as Earth and exists in the habitable zone of its host star, which is the zone where liquid water can be present on the surface. This planet seems promising for closer observation and studies.
+                    <a href = "https://www.space.com/nasa-tess-first-earth-size-habitable-exoplanet-toi-700d.html" title = "Accessed January 8, 2020" target = "_blank">[2]</a></p>
+                
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/recent_events_a1.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!-- YouTube Video-->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YojBpilJB00" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+
+                <!-- Back Button -->
+                <br>
+                <div class = "return"> 
+                    <a href = "recent_events.html"><button>Return</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

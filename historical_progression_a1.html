@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Historical Progression Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Historical Progression - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a class ="active" href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>HISTORICAL PROGRESSION</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>First Black Hole Confirmed</h3>
+                <strong>Published December 2019</strong>
+                <div class = "articleimage">
+                    <img src = "images/historical_progression_a1.jpg" alt = "Cosmic Activity Orbiting a Black Hole" title = "Black Hole Galaxy Science / Gerd Altmann / Pixabay"> 
+                </div>
+                <p>A black hole is a region in space that has characteristics that can seem very bizarre and unreal. They are extremely dense, and they have a gravitational acceleration that is so strong that nothing can escape from it when caught. Not even light, which can travel faster than anything else in the universe. Huge black holes are expected to form when very massive stars collapse at the end of their life cycle. After a black hole has formed, it can continue to grow by absorbing mass from its surroundings. By absorbing other stars and merging with other black holes, supermassive black holes of millions of solar masses may form. Most scientists agree that in the center of most galaxies, there are supermassive black holes that exist. Albert Einstein first predicted the existence of black holes in 1916, with his general theory of relativity. This was always a theory that a lot of scientists and astrophysicists had considered, but it wasn't until 1971 that strong emissions of X-rays were detected from a point in the constellation Cygnus. The X-rays were thought to have originated from the first-ever detected black hole, though it was only confirmed 30 years after this time. 
+                    <a href = "https://www.kqed.org/science/1945508/eight-big-space-discoveries-since-the-apollo-landings" title = "Accessed December 29, 2019" target = "_blank">[1]</a>
+                    In 2019, an international array of coordinated telescopes, called the Event Horizon Telescope were able to achieve what used to be thought of as impossible: It captured an image a black hole. The distance this supermassive black hole was from us was about 53 million light years away. The mass of this black hole is about 6.5 billion stars that are the size of our sun. Black holes used to be thought of as this object of darkness that can never be captured as a picture since a black hole wont even let light escape. But black holes are too small and far away for regular telescopes to observe. The EHT array, however, is not a regular telescope; it's a collection of multiple millimeter-wavelength radio telescopes stationed at observatories from Antarctica to Greenland, Spain to Hawaii, and throughout the Americas. When their collective observations of a target object are synchronized, the EHT can achieve gathering images at a very high level - high enough to capture an image of a black hole.    
+                    <a href= "https://www.space.com/15421-black-holes-facts-formation-discovery-sdcmp.html" title = "Accessed December 29, 2019" target = "_blank">[2]</a></p>
+                
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/historical_progression_a1.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!-- YouTube Video-->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/S_GVbuddri8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+
+                <!-- Back Button -->
+                <br>
+                <div class = "return"> 
+                    <a href = "historical_progression.html"><button>Return</button></a>
+                </div>
+            </div> 
+        </div>
+
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

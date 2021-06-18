@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- Historical Progression Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Historical Progression - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a class ="active" href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- List of Articles-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>HISTORICAL PROGRESSION</h2>
+                </div>
+            </div>
+
+            <div class = "articles">
+                <div class = "articleSelector">
+                    <a href = "historical_progression_a1.html"><img src = "images/historical_progression_a1.jpg" alt = "Cosmic Activity Orbiting a Black Hole" title = "Black Hole Galaxy Science / Gerd Altmann / Pixabay"></a>
+                    <a href = "historical_progression_a1.html"><h3>First Black Hole Confirmed</h3></a>
+                    <p>A black hole is a region in space that has characteristics that can seem very...</p> 
+                </div>
+                
+                <div class = "articleSelector">
+                    <a href = "historical_progression_a2.html"><img src = "images/historical_progression_a2.jpg"  alt = "Spiralling Activity around a Central Point in Space" title = "Yusuf YILMAZ/Shutterstock"></a>
+                    <a href = "historical_progression_a2.html"><h3>Expanding Universe, and the Big Bang</h3></a>
+                    <p>One of the questions that scientists have always wondered about is the size and age of the universe...</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

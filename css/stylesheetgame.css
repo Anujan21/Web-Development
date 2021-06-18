@@ -1,0 +1,109 @@
+/*Images for the game (spaceship, missiles and asteroid) taken from
+https://ya-webdesign.com/imgdownload.html 
+License – Public Domain Dedication 
+*/
+
+/* game canvas set up */
+#gamecanvas{
+  background-image: url("../images/spacegame/gamebackground.jpg");
+  background-size: contain;
+  width: 600px;
+  max-width: 100%;
+  height:400px;
+  margin: auto;
+  position: relative;
+  text-align: center
+}
+
+/* missile board will be same as canvas */
+#missiles{
+  height: inherit;
+  width: inherit;
+  position: absolute;;
+}
+
+/* ship inital parameters */
+#ship{
+  background-image: url("../images/spacegame/ship.png");
+  background-size: contain;
+  position: absolute;
+  height:30px;
+  width: 60px;
+  top: 185px;
+}
+
+/* missile set up */
+.missile{
+  background-image: url("../images/spacegame/missile.png");
+  background-size: contain;
+  position: absolute;
+  height: 10px;
+  width: 20px;
+}
+
+/* asteroid set up */
+.asteroid{
+  background-image: url("../images/spacegame/asteroid.png");
+  background-size: contain;
+  height: 35px;
+  width: 37px;
+  position: absolute;
+}
+
+/* to keep score on top right of page */
+#score{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 25px;
+  color: white;
+  margin-top: 5px;
+}
+
+/* to keep missile count on top left of page */
+#missilecount{
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 25px;
+  color: white;
+  margin-top: 5px;
+}
+
+/* start game div container for button */
+#startGame{
+  top: 40%;
+  left: 31%;
+  position: absolute;
+  display: inline-block
+}
+
+/* button to start game */
+#startGame button{
+  background-color: #3da0fc;
+  border: none;
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* if screen too small to contain game */
+@media only screen and (max-width: 745px) {
+
+#gamecanvas{
+  display: none;
+}
+
+#gameUnavailable{
+  display: inline-block;
+}
+
+#gamePretext{
+  display: none;
+}
+}

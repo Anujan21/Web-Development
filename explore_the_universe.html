@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- Explore the Universe Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Explore the Universe - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a class ="active" href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Explore the Universe Articles-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>EXPLORE THE UNIVERSE</h2>
+                </div>
+            </div>
+
+            <div class = "articles">
+                <div class = "articleSelector">
+                    <a href = "explore_the_universe_galaxies.html"><img src = "images/explore_the_universe_galaxies.jpg" alt = "Spiral Galaxy" title = "NGC 4414 / WikiImages / Pixabay"></a>
+                    <a href = "explore_the_universe_galaxies.html"><h3>Galaxies</h3></a>
+                    <p>A galaxy is a vast system containing stars, planets, nebulae, dust, gas, and dark matter that...</p> 
+                </div>
+
+                
+                <div class = "articleSelector">
+                    <a href = "explore_the_universe_planets.html"><img src = "images/explore_the_universe_planets.jpg" alt = "Planet" title = "Planet Nine / Caltech/R. Hurt (IPAC)"></a>
+                    <a href = "explore_the_universe_planets.html"><h3>Planets</h3></a>
+                    <p>In our solar system, there are 8 planets located within in.</p> 
+                </div>
+            </div>
+            <br>
+            <div class = "articles">
+                <div class = "articleSelector">
+                    <a href = "explore_the_universe_stars.html"><img src = "images/explore_the_universe_stars.jpg" alt = "Sun Close up Burning" title = "Sun Fireball /The New York Times"></a>
+                    <a href = "explore_the_universe_stars.html"><h3>Stars</h3></a>
+                    <p>Stars are large sphere-like bodies made of plasma, mainly consisting of hydrogen and helium. </p> 
+                </div>
+                <div class = "articleSelector">
+                    <a href = "explore_the_universe_asteroids.html"><img src = "images/explore_the_universe_asteroids.jpg" alt = "Asteroid Floating in Space" title = "Universe Planet Sky / CharlVera / Pixabay"></a>
+                    <a href = "explore_the_universe_asteroids.html"><h3>Asteroids</h3></a>
+                    <p>Asteroids are small bodies of rock or metal that orbit the Sun. </p> 
+                </div>
+            </div>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

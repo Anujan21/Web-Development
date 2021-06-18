@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!-- Historical Progression Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Historical Progression - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a class ="active" href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>HISTORICAL PROGRESSION</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>Expanding Universe, and the Big Bang</h3>
+                <strong>Published December 2019</strong>
+                <div class = "articleimage">
+                    <img src = "images/historical_progression_a2.jpg" alt = "Spiralling Activity around a Central Point in Space" title = "Yusuf YILMAZ/Shutterstock"> 
+                </div>
+                <p>One of the questions that scientists have always wondered about is the size and age of the universe. Whether the universe was infinite in size, or does it stop at some point, and the things that would occur if there was an "end".  In the early 1800's, there was a paradox that astronomers came across when they learned about Isaac Newtons law of gravity. The law is that gravity is always an attractive force, so that every object in the universe will attract another object. If the universe truly were finite, the attractive forces of all the objects in the universe should have caused the entire universe to collapse on itself. This clearly had not happened, so astronomers thought that the universe was infinite. The astronomers also thought that the universe was finite when a German astronomer Heinrich Olbers said "if you looked in any direction into the sky, your line of sight should eventually fall on a star. Although the apparent size of a star in the sky becomes smaller as the distance to the star increases, the brightness of this smaller surface remains a constant. Therefore, if the Universe were infinite, the whole surface of the night sky should be as bright as a star. Obviously, there are dark areas in the sky, so the universe must be finite". Later in the 1900's, astronomers were able to measure redshifts of many different distant galaxies, and by seeing that the redshifts of these galaxies increased as a linear function of their distance, they concluded that the universe is expanding. 
+                    <a href = "https://skyserver.sdss.org/dr1/en/astro/universe/universe.asp" title = "Accessed December 29, 2019" target = "_blank">[1]</a>
+                    Evidence today suggests that the universe is expanding faster today than it used to before, which has a lot of scientists puzzled. In the 1900s, the American astronomer Edwin Hubble explained that every galaxy other than our own is travelling away from ours at a high astronomical speed, and it is linear to the distance away from our own galaxy. In this kind of expansion, it would seem that all galaxies may have started in the same spot, as observers from any galaxy could see the that all other galaxies follow the same law - the law that the distance of other galaxies is proportional to the speed that they are travelling at relative to one another. 
+                    <a href = "https://www.physicsoftheuniverse.com/topics_bigbang_expanding.html" title = "Accessed December 29, 2019" target = "_blank">[2]</a>
+                    This brought up the theory of the Big Bang, which states that it was only over a moment that the entire universe was given birth too, so scientists estimate the age of the universe to be about 13.8 billion years.
+                    <a href = "https://www.space.com/25126-big-bang-theory.html" title = "Accessed December 29, 2019" target = "_blank">[3]</a></p>
+
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/historical_progression_a2.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!-- YouTube Video-->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wNDGgL73ihY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+                
+                <!-- Back Button -->
+                <br>
+                <div class = "return"> 
+                    <a href = "historical_progression.html"><button>Return</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

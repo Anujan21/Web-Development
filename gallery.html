@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!-- Gallery Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Gallery - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <!-- <script type="text/javascript" src="js/myScript.js"></script> -->
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myCarousel.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a class ="active" href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <div class="body">
+            <!-- Gallery-->
+            <div class = "banner_2">
+                <div class = "page_title">
+                    <h2>GALLERY</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <p>View some breathtaking pictures of outer space! Click on an image to enlarge.</p> <!-- will have to add this functionality later-->
+                <div class = "gallerycontainer">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img class = "opacity" src = "images/gallery_1.jpg" width = 100% alt = "Millions of stars far away" title = "Pexels / Pixabay">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img class = "opacity" src = "images/gallery_2.jpg" width = 100% alt = "Green aurora over thousands of stars" title = "geralt / Pixabay">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img class = "opacity" src = "images/gallery_3.jpg" width = 100% alt = "Star gazing from a forest" title = "Free-Photos / Pixabay">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img class = "opacity" src = "images/gallery_4.jpg" width = 100% alt = "Viewing Saturn on a Rocky Moon" title = "8385 / Pixabay">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img class = "opacity" src = "images/gallery_5.jpg" width = 100% alt = "Fictional Planet Landscape" title = "JAKO5D / Pixabay">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img class = "opacity" src = "images/gallery_6.jpg" width = 100% alt = "Earth at Night with Lights" title = "Free-Photos / Pixabay">
+                    </div>
+                    
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>      
+
+                    <!-- Thumbnail images -->
+                    <div class="galleryrow">
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Millions of stars far away">
+                        </div>
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Green aurora over thousands of stars">
+                        </div>
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Star gazing from a forest">
+                        </div>
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Viewing Saturn on a Rocky Moon">
+                        </div>
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Fictional Planet Landscape">
+                        </div>
+                        <div class="gallerycolumn">
+                        <img class="demo cursor" src="images/gallery_6.jpg" style="width:100%" onclick="currentSlide(6)" alt = "Earth at Night with Lights">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            date();
+        </script>
+    </body>
+</html>

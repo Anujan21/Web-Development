@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<!-- Home Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn about Space and beyond. Learn about the solar system, the planets and many more!">
+        <meta name="keywords" content="space, planets, galaxies, elon musk, solar system, asteroid, future, stars">
+        <meta name="author" content="Anujan Premkumar">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Website-->
+        <title> Home - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a class ="active" href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <hr>
+
+        <div class="body">
+            <!-- Banner -->
+            <div class = "banner">
+                <div class = "introtext">
+                    <h2>Welcome to Cosmic Universe!</h2>
+                    <p>Beyond our home, planet earth, lies a vast space of the unknown just waiting to be discovered.</p> 
+                    <p>Click one of the links below to learn more!</p>
+                </div>
+            </div>
+            <!-- Alternative Navigational Links -->
+            <div class = "navigation_alt">
+                <div class = "home1">
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "recent_events.html" > <img src = "images/recent_event_dp.jpg" alt = "Rocketship in Space" title = "Kennedy Space Center/SpaceX via Flickr"> </a>
+                        </div>
+                        <h3 class = "topictitle">RECENT EVENTS</h3>
+                        <p>Learn the most up to date information about space events happening around the Earth.</p>
+                        <h3> 
+                            <a href = "recent_events.html" ><button class="buttons" >LEARN MORE</button></a>
+                        </h3>
+                    </div>
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "historical_progression.html" > <img src = "images/historical_progression_dp.jpg" alt = "Man on the Moon" title = "A Man on the Moon/NASA"> </a>
+                        </div>
+                        <h3 class = "topictitle">HISTORICAL PROGRESSION</h3>
+                        <p>See the events that have occured in the past for better space understanding.</p>
+                        <h3> 
+                            <a href = "historical_progression.html" ><button class="buttons" >LEARN MORE</button></a>
+                        </h3>
+                    </div>
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "explore_the_universe.html" > <img src = "images/explore_the_universe_dp.jpg" alt = "Earth, Other Planets and Constellations" title = "Planet Moon Orbit Solar/LoganArt /Pixabay"> </a>
+                        </div>
+                        <h3 class = "topictitle">EXPLORE THE UNIVERSE</h3>
+                        <p>Check out the cool things that exist in space! Learn about the solar system, galaxy and more.</p>
+                        <h3> 
+                            <a href = "explore_the_universe.html" ><button class="buttons" >LEARN MORE</button></a>
+                        </h3>
+                    </div>
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "future_events.html" ><img src = "images/future_events_dp.jpg" alt = "Future Colonization of Some Other Planet" title = "James Vaughan /SpaceFlight Insider"> </a>
+                        </div>
+                        <h3 class = "topictitle">FUTURE EVENTS</h3>
+                        <p>Have you ever wanted to learn about the things that happen in the future? Check out those events here.</p>
+                        <h3> 
+                            <a href = "future_events.html" ><button class="buttons" >LEARN MORE</button class="buttons"></a>
+                        </h3>
+                    </div>
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "gallery.html" > <img src = "images/gallery_dp.jpg" alt = "Beautiful Picture of Space" title = "Chandra X-ray Observatory Center/NASA"> </a>
+                        </div>
+                        <h3 class = "topictitle">GALLERY</h3>
+                        <p>Our gallery has some of the most beautiful pictures of space you will ever find!</p>
+                        <h3> 
+                            <a href = "gallery.html" ><button class="buttons" >LEARN MORE</button class="buttons"></a>
+                        </h3>
+                    </div>
+                    <div class = "homelayout">
+                        <div class="home_images" >
+                            <a href = "about_us.html" > <img src = "images/about_us_dp.jpg" alt = "Man on his Phone and Laptop" title = "Giulio Fornasar/Getty Images/iStockphoto"> </a>
+                        </div>
+                        <h3 class = "topictitle">ABOUT US</h3>
+                        <p>Have any questions? Need to contact us? No worries.</p>
+                        <h3> 
+                            <a href = "about_us.html" ><button class="buttons" >LEARN MORE</button class="buttons"></a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Top of Page button -->
+        <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

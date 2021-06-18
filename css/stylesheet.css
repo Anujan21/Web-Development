@@ -1,0 +1,747 @@
+/*Very Top of page*/
+h1{
+  color:white;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 25px;
+  padding:0;
+}
+
+header{
+  background-image: url("../images/stars.jpg");
+  height: 150px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+/* Navigation Bar */ 
+.navigation {
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 8%;
+}
+
+/* removing bullets and adjusting decorations*/
+.navigation a {
+  margin: 0;
+  padding: 0px 8%;
+  overflow: hidden;
+  background-color: #333;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hover over color */
+.navigation a:hover {
+  background-color: #111;
+}
+
+/* Selected Tab will be this colour*/
+.navigation a.active {
+  background-color: rgb(32, 56, 100);
+}
+
+
+/* Search Bar */
+.searchBar{
+  float: right;
+  background-color: #333;
+  margin-right: 5%;
+}
+
+/* Search Bar Text area design */
+.searchBar input[type=text] {
+  width: 225px;
+  padding: 6px 12px 6px 12px;
+  display: inline-block;
+  border: 1px solid rgb(32, 56, 100);
+  border-radius: 0mm;
+  box-sizing: border-box;
+  float: none;
+  margin: 8px 0px 8px 8px;
+}
+
+/* Button for search bar design*/
+.searchBar button {
+  background-color:rgb(32, 56, 100);
+  float: none;
+  color: white;
+  padding: 7px 10px;
+  width: 40px;
+  border: none;
+  max-width: 50%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 0;
+  margin-left: 0;
+  cursor: pointer;
+  font-size: small;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+/* When hovering, change button colour */
+.searchBar button:hover{
+  background-color: rgb(68, 114, 196);
+}
+
+
+/* Home Banner */
+.banner{
+  max-width:100%;
+  height:340px;
+  background:url("../images/gallery_1cut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:20px 5% 40px 5%;
+}
+
+/* text within banner */
+.introtext{
+  padding: 10px 5% 10px 5%;
+  background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
+  height:320px; /* 400px - 20px - 40px*/
+}
+
+/* text within banner */
+.introtext h2{
+  color: white;
+  font-size: 36px !important; /* used to overwrite other size */
+  font-weight: 540;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* text within banner */
+.introtext p{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large !important; 
+}
+
+
+/*Home Body Images*/
+.navigation_alt img {
+  border-radius: 0px;
+  object-fit: cover;
+}
+
+.home_images:hover{
+  opacity: 0.5;
+}
+
+.navigation_alt h3{
+  text-align: left;
+}
+
+/* Make it so that the number of links horizontally depends on screen size */
+.home1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* Initial image layout */
+.homelayout{
+  width: 400px;
+  padding: 30px 30px;
+}
+
+/* Initial image width  */
+.home_images img{
+  width:400px;
+  height:300px;
+}
+
+.homelayout p{
+  height:40px;
+}
+
+/* Colour and font of topic headings */
+.topictitle{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(32, 56, 100);
+  font-size: 24px;
+}
+
+
+/* Navigation alt homepage buttons */
+.buttons {
+  background-color: rgb(32, 56, 100); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttons:hover{
+  background-color: rgb(68,114,196);
+}
+
+
+/* Remaining Banners Design*/
+.banner_2{
+  max-width:100%;
+  height:110px;
+  background:url("../images/gallery_1cut.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin:20px 5% 40px 5%;
+}
+
+/* text for banner */
+.page_title{
+  color: white;
+  text-align:left;
+  font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif ;
+  padding:5px 5% 5px 5%;
+  }
+
+
+/* Link Titles */
+.articles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* To split articles into two columns */
+.articleSelector{
+  padding:0px 5% 0px 5%;
+  flex-basis: 45%;
+}
+
+/* Images for articles  */
+.articleSelector img{
+  width:100%;
+  height:auto;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.articleSelector img:hover{
+  opacity:50%;
+}
+
+/* Font and colour for subheadings */
+h3 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:  rgb(32, 56, 100);
+  text-transform: uppercase;
+}
+
+/* Remove underline for all links */
+a{
+  text-decoration: none;
+  color: rgb(68, 114, 196);
+}
+
+/* Sub-sub headings */
+h4{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:  rgb(68, 114, 196);
+}
+
+
+/* Body Material*/
+body{
+  background-color: black;
+}
+
+/* "body" within body for asthetics */
+.body{
+  background-color:aliceblue;
+  padding: 20px 10% 40px 10%;
+  position: relative;
+}
+
+.body p{
+  font-size: large;
+  text-align: justify;
+}
+
+/* Images for articles */
+.articleimage{
+  overflow:auto;
+  padding: 30px 0% 30px 0%;
+}
+
+.articleimage img {
+  max-width: 100%;
+  height: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Two sizes of images */
+.articleimage2 img {
+  width:400px;
+  max-width: 100%;
+  height: initial;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.article_information{
+  padding: 0px 5% 0px 5%;
+}
+
+
+/* Return Button */
+.return button{
+  background-color: rgb(32, 56, 100);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+}
+
+.return button:hover{
+  background-color: rgb(68, 114, 196);
+}
+
+
+/* Table */
+.table{
+  overflow-x: auto;
+}
+
+/* Making the table look prettier */
+#data {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  max-width: 100%;
+  text-align:center;
+}
+
+#data td, #data th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#data tr:nth-child(even){background-color: rgb(68, 114, 196, 0.1);}
+#data tr:nth-child(odd){background-color:white;}
+
+#data tr:hover {background-color: #ddd;}
+
+#data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(32, 56, 100);
+  color: white;
+  cursor: pointer;
+}
+
+.planet{
+  font-weight: bold;
+}
+
+/* Future Events */
+.futureEvents ul{
+  font-size: large;
+  list-style-type: square;
+}
+
+.futureEvents li{
+  padding: 4px 0px;
+}
+
+/* Asteroid game */
+#gameUnavailable{
+  display: none;
+}
+
+/* Future Events decreasing padding from top only*/
+.articlefuture{
+  padding-top: 0px;
+}
+
+.timeperiod{
+	font-weight:bold;
+	color:rgb(68,114,196);
+}
+
+/* Gallery  NOTE: MOST OF THE GALLERY CODE BELOW WAS RE-USED FROM W3SCHOOLS.COM*/
+/*https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp*/
+/* Accessed February 28 2020*/
+
+.gallerycontainer *{
+  box-sizing:border-box;
+}
+
+.gallerycontainer img {
+  vertical-align: middle;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallerycontainer {
+  position: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.galleryrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.gallerycolumn {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.cursoractive, .demo:hover {
+  opacity: 1;
+}
+
+
+#caption {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Form */
+.outerform{
+  max-width: 100%;
+  margin: auto;
+
+}
+
+/* Making a border for the form */
+.contactUs {
+  padding: 5px 15px;
+  border: rgb(32, 56, 100);
+  border-style: solid;
+  border-width: 3px;
+  background-color: white;
+  border-radius: 0px;
+}
+
+.contactUs h3{
+  text-align: center;
+  font-size: x-large;
+}
+
+.reasonForContact{
+  padding-top: 10px;
+}
+
+/*Email area*/
+input[type=email] {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 20px;
+  margin: 8px 4px;
+  display: inline-block;
+  border: 1.25px solid rgb(32, 56, 100);
+  border-radius: 0px;
+  box-sizing: border-box;
+  background-color: rgb(68, 114, 196, 0.1);
+}
+
+/* Checking Validation of names and email*/
+#lbltext1, #lbltext2, #lbltext3{
+  color:red;
+  visibility: hidden;
+  padding-bottom: 5px;
+}
+
+/* Text area */
+.outerform input[type=text]{ /* To avoid search bar */
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 20px;
+  margin: 8px 4px;
+  display: inline-block;
+  border: 1.25px solid rgb(32, 56, 100);
+  border-radius: 0px;
+  box-sizing: border-box; 
+  background-color: rgb(68, 114, 196, 0.1);
+}
+
+/* Drop down select area */
+select {
+  width: 80px;
+  max-width: 100%;
+  padding: 5px 10px;
+  margin: 8px 4px;
+  display: inline-block;
+  border: 1.25px solid rgb(32, 56, 100);
+  border-radius: 0px;
+  box-sizing: border-box;
+  background-color: rgb(68, 114, 196, 0.1);
+}
+
+#message{
+	width:95%;
+	margin:auto;
+}
+
+/* message */
+textarea {
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 20px;
+  margin: 8px 4px;
+  display: inline-block;
+  border: 1.25px solid rgb(32, 56, 100);
+  border-radius: 0px;
+  box-sizing: border-box;
+  resize: none;
+  font-family: Arial;
+  background-color: rgb(68, 114, 196, 0.1);
+}
+
+/*REUSE OF CODE HERE FROM w3SCHOOLS TO CREATE CUSTOM RADIO BUTTONS*/
+/*https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+/* Accessed February 27 2020*/
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.label{
+	color:black;
+}
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: rgb(68, 114, 196, 0.1);
+  border-radius: 10%;
+  border-width: 1.25px;
+  border-color: rgb(32, 56, 100);
+  border-style:solid;
+}
+
+/* On mouse-over, add a background color */
+.container:hover input ~ .checkmark{
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: rgb(32, 56, 100);
+}
+
+/* Create the indicator (the square - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (square) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (square) */
+.container .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 6px;
+	height: 6px;
+	border-radius: 10%;
+	background: white;
+}
+
+/* Making it two columns */
+.column{
+	column-count:2;
+	column-gap: 40px;
+	width: 95%;
+	margin: auto;
+}
+
+/* Two buttons at the end of form styling*/
+input[type=submit], input[type=reset] {
+	width:100px;
+	background-color: rgb(32, 56, 100);
+	color: white;
+	padding: 10px 15px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align:center;
+	-webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background-color: rgb(68, 114, 196);
+}
+
+/* YouTube Videos*/
+/* below two sets of styling taken from https://www.youtube.com/watch?v=9YffrCViTVk*/
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image Shadow */
+img{
+  opacity: 0;
+}
+
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+/* Search Results */
+#noResults{
+  color: rgb(5, 4, 4);
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Footer*/
+footer{
+  text-align: center;
+  font-size: initial;
+  color: white;
+  font: bold;
+  background-image: url("../images/stars.jpg");
+  padding: 10px;
+}
+
+/* Top of page Button */
+#topOfPage{
+position: fixed;
+bottom: 180px;
+right: 7%;
+width: 35px;
+height: 30px;
+background-color: rgb(32, 56, 100);
+color: white;
+border: none;
+cursor: pointer;
+display: none;
+}
+
+/* Internet Explorer */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10+ CSS */
+
+.outerform{
+  max-width: 800px;
+  margin: auto;
+}
+
+}

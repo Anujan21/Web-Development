@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+
+<!-- About Us Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> About Us - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a class ="active" href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+        <div class="body">
+            <div class = "banner_2">
+                <div class = "page_title">
+                    <h2>ABOUT US</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <!-- About Cosmic Universe -->
+                <h3>About Cosmic Universe</h3>
+                <p>At Cosmic Universe, our goal is to provide both interesting and valuable information to those who are interested in space, and to spark interest to those who don't know much about space. We believe there is content on this website for all kinds of users, and we try our best to provide the most accurate and reliable information we can find. We hope that users can feel like their time on our site was worthwhile, whether it was learning more about something they found interesting, or just getting a general idea of a topic for the first time.</p>
+                
+                <h3>Motivation</h3>
+                <p>Some people ask "What's the point in learning about space?" Because they think that it might not matter to the average person. We have not just one reason that drives us but two. The first one being that we get to do what we love, and that is continuously learning about the objects and their behaviours in space, which is what inspires us and feels meaningful to research, learn and teach the things that we find interesting. The second reason is that most people aren't aware of the possible threats that may be beyond the atmosphere of our own planet. By learning about what's our there, we can better equip and protect our own planet from another possible asteroid, or a different kind of threat that no one has ever seen before.</p>
+                
+                <h3>Feedback</h3>
+                <p>We welcome all feedback from all users. Please out the following form if you wish to contact us for any reason, whether that be to correct us on a mistake that we may have made, any outdated information we hadn't gotten a chance to correct, comments you might have, concerns, and any questions as well. We make every effort to keep all our content updated and relevant.</p>
+
+                <h3>Find Us</h3>
+                <p>We are located at this location if you wish to contact us in person.</p>
+
+                <!-- Google Maps--> <!--Taken from https://1map.com/map-embed-->
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"height":400,"width":500,"zoom":15,"queryString":"McMaster University, Main Street West, Hamilton, ON, Canada","place_id":"ChIJwSr3RKyELIgRHAFDYeoAnjk","satellite":false,"centerCoord":[43.26296547710178,-79.92036429999999],"cid":"0x399e00ea6143011c","lang":"en","cityUrl":"/canada/hamilton-5008","cityAnchorText":"Map of Hamilton, Ontario, Canada","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"216545"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=216545';
+                    s.async = true;
+                    s.onload = function (e) {
+                      window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                  })();</script><a href="https://1map.com/map-embed">1 Map</a>
+                </div>
+                <br>
+                <br>
+
+                <!-- Form  -->
+                <div class = "outerform">
+                    <div class= "contactUs">
+                        <h3>Contact Form</h3>
+                        <form name="myForm" action="mailto:anujanpremkumar@gmail.com" method = "POST"> 
+							<div class = "column">
+								<div class = "side1">
+									<span id= "fname">
+										<label>First Name:</label> <!-- First Name Label -->
+                                        <input type="text" id = "firstname" name = "firstName" placeholder="Enter Your First Name" onblur= "validateFName()">
+                                        <label id= "lbltext1">Invalid</label>
+									</span>
+									<br>
+									<span id = "lname">
+										<label>Last Name:</label> <!-- Last Name Label -->
+                                        <input type="text" id = "lastname" name = "lastName" placeholder="Enter Your Last Name" onblur= "validateLName()">
+                                        <label id= "lbltext2">Invalid</label>
+									</span>
+									<br>
+									<span id = "email">
+										<label>Email:</label> <!-- Email Label -->
+                                        <input type="email" id = "emailaddress" name = "email" placeholder="Enter Your Email Address" onblur= "validateEmail()">
+                                        <label id= "lbltext3">Invalid</label>
+									</span>
+								</div>
+								<div class = "side2">
+									<span id="lookingfor">
+										<label>Did you find what you were looking for?</label> <!-- Use of Option type input -->
+										<select name="success">
+											<option value="Yes">Yes</option>
+											<option value="No">No</option>
+										</select>
+									</span>
+									<br>
+									<br>
+									<span id = "reasonForContact">
+										<label>Reason for Contact:</label> <!-- Use of Radio type input  -->
+										<div class = "reasonForContact">
+										<label class = "container">Question
+											<input type="radio" name="ContactReason" value="Question">
+											<span class="checkmark"></span>
+										</label>
+										<label class = "container">Comment
+											<input type="radio" name="ContactReason" value="Comment">
+											<span class="checkmark"></span>
+										</label>	
+										<label class = "container">Concern
+											<input type="radio" name="ContactReason" value="Concern"> 
+											<span class="checkmark"></span>
+										</label>	
+										<label class = "container">Other
+											<input type="radio" name="ContactReason" value="Other"> 
+											<span class="checkmark"></span>
+										</label>
+										</div>  
+									</span>
+								</div>
+							</div>
+                            <div id="message">
+                                <label>Message:</label> <!-- Message Label -->
+                                <br>
+                                <textarea name="message" id="" cols="30" rows="5" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <br>
+                            <br>
+                            <input type = "submit" name ="submit" value = "Submit">
+                            <input type = "reset" name = "resetForm" value = "ResetForm">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top of Page button -->
+        <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+</html>
+

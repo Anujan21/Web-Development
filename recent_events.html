@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- Recent Events Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Recent Events - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a class ="active" href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 banner_3">
+                <div class = "page_title">
+                    <h2>RECENT EVENTS</h2>
+                </div>
+            </div>
+            
+            <div class = "articles">
+                <div class = "articleSelector">
+                    <a href = "recent_events_a1.html"><img src = "images/recent_events_a1.jpg" alt = "UFO Gliding in an Unknown Planet" title = "Landscape Water Rock / Reimund Bertrams / Pixabay"></a>
+                    <a href = "recent_events_a1.html"><h3>Discovering new Worlds</h3></a>
+                    <p>One of the biggest questions scientists will always have and can not be certain about is whether there is life outside of our own planet.</p> 
+                </div>
+                
+                <div class = "articleSelector">
+                    <a href = "recent_events_a2.html"><img src = "images/recent_events_a2.jpg" alt = "Deep Space Atomic Clock in Space inside a Satellite" title = "Deep Space Atomic Clock / NASA"></a>
+                    <a href = "recent_events_a2.html"><h3>Deep Space Atomic Clock</h3></a>
+                    <p>A huge part of discoveries, unlocking more doors and gathering new information comes from experimenting</p>
+                </div>
+            </div>
+        </div>
+                
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

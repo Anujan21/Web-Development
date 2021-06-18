@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+
+<!-- Future Events Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Future Events - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a href= "explore_the_universe.html"> Explore the Universe </a>
+            <a class ="active" href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 banner_3">
+                <div class = "page_title">
+                    <h2>FUTURE EVENTS</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <div class = "articleimage articlefuture">
+                    <img src = "images/future_events_dp.jpg" alt = "Future Colonization of Some Other Planet" title = "James Vaughan  / SpaceFlight Insider">
+                </div>
+                <p>The future is something that can't be predicted with absolute certainty. There are scientific theories that may accurately predict what might possibly occur in the future, but as with anything, events in the future can't be guaranteed. Regardless, scientists have unraveled a lot of truth of what's beyond the atmosphere of this planet, and continue to discover more and more celestial objects. Using what they have discovered, and using fields such as astrophysics, quantum physics and space physics, they can come up with theories on how things might behave in the near future, as well as distant future.</p>
+                <p>Here are notable events to see in the distant future (in years): </p>
+                <div class = "futureEvents">
+                    <ul>
+                        <li><span class = "timeperiod">1</span> - Launch of ESA Mars Rover and Russion surface platform.</li>
+                        <li><span class = "timeperiod">100</span>  - Long-duration lunar eclipse of approximately 106.1 minutes.</li>
+                        <li><span class = "timeperiod">10,000</span>  - The red supergiant star Antares will likely have exploded in a supernova. The explosion is expected to be easily visible in daylight.</li>
+                        <li><span class = "timeperiod">50,000</span>  - Due to lunar tides decelerating the Earth's rotation, the need for a leap second every day would arrive.</li>
+                        <li><span class = "timeperiod">100,000</span>  - Most of the constellations we see in the sky will become unrecognizable due to the motion of stars through the Milky way.</li>
+                        <li><span class = "timeperiod">200,000</span>  - Constellations that used to be visible from Earth will no longer be recognizable.</li>
+                        <li><span class = "timeperiod">500,000</span>  - Earth will likely have been hit by an asteroid of roughly 1 km in diameter, assuming it cannot be averted.</li>
+                        <li><span class = "timeperiod">1,000,000</span>  - Betelgeuse, a star that can swallow our Sun 20 times, is 100,000 times brighter and is located about 640 light years from Earth can be reaching the end of its lifespan.</li>
+                        <li><span class = "timeperiod">6,800,000</span>  - DNA from the 21st century will have completely decayed.</li>
+                        <li><span class = "timeperiod">7,200,000</span>  - Mount Rushmore has eroded away.</li>
+                        <li><span class = "timeperiod">10,000,000</span>  - Earth is being threatened by lethal levels of gamma radiation.</li>
+                        <li><span class = "timeperiod">100,000,000</span>  - The rings of Saturn have disappeared.</li>
+                        <li><span class = "timeperiod">180 million</span>  - Due to the gradual slowing down of Earth's rotation, a day on Earth will be one hour longer than it is today.</li>
+                        <li><span class = "timeperiod">600 million</span>  - Tidal acceleration moves the Moon far enough from Earth that total solar eclipses are no longer possible.</li>
+                        <li><span class = "timeperiod">1 billion</span>  - Earth is becoming too hot to support liquid water.</li>
+                        <li><span class = "timeperiod">4 billion</span>  - The solar system will die when the Sun goes supernova.</li>
+                        <li><span class = "timeperiod">5 billion</span>  - Andromeda galaxy will collide with the Milky Way galaxy and form a larger galaxy called Milkdromeda Galaxy.</li>
+                    </ul>
+                </div>
+                <!-- References-->
+                <p class ="learnMore"> To learn about even more astronomical events of the future, click either <a href = "https://www.futuretimeline.net/beyond-1000000.htm" title = "Accessed December 31, 2019" target = "_blank">here</a> or <a href = "https://en.wikipedia.org/wiki/Timeline_of_the_far_future" title = "Accessed December 31, 2019" target = "_blank">here</a>!</p>
+                
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/future_events.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+            </div>
+
+            <!-- Top of Page button -->
+            <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

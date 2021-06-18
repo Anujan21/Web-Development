@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- Explore the Universe Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Explore the Universe - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a class ="active" href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>EXPLORE THE UNIVERSE</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>Galaxies</h3>
+                <strong>Published December 2019</strong>
+                <div class = "articleimage">
+                    <img src = "images/explore_the_universe_galaxies.jpg" alt = "Spiral Galaxy" title = "NGC 4414 / WikiImages / Pixabay"> 
+                </div>
+                <p>A galaxy is a vast system containing stars, planets, nebulae, dust, gas, and dark matter that are held together by gravity. In the middle of the galaxy, there is a supermassive black hole that keeps everything bound together. There are over 170 billion galaxies in the universe. There are different types of galaxies to have been seen by scientists including spiral galaxies, elliptical galaxies and irregular galaxies.
+                    <a href = "https://space-facts.com/galaxies/" title = "Accessed January 2, 2020" target = "_blank">[1]</a></p>
+
+                <h4>Milky Way Galaxy</h4> 
+                <p>The Milky Way Galaxy is the galaxy in which we reside in. It is called the Milky Way because it appears as a milky band of light in the sky when viewed from a dark area.2 It can be classified as a barred spiral in shape and has four major arms in its disk. The center of the galaxy contains a supermassive black hole known as Sagittarius A which contains the mass of about 4.3 Suns. The galactic center is located about 26000 light-years from Earth. The Milky Way is approximately 13.6 billion years old and has a mass of about 800-1500 solar masses. The Milky Way moves through space at a velocity of about 552 kilometers per second while the stars, gas and dust within the galaxy all orbit the center at a rate of 220 kilometers per second. This constant rate for all stars of different masses and distances from the core implies that there is a presence of dark matter surrounding the galaxy. The area where our solar system resides in this galaxy can be shown in the following image.
+                    <a href = "https://space-facts.com/galaxies/milky-way/" title = "Accessed January 2, 2020" target = "_blank">[2]</a></p>
+                <div class = "articleimage">
+                    <img src = "images/explore_the_universe_galaxies_milkyway.jpg" alt = "Milky Way" title = "Photo by Denis Degioanni on Unsplash"> 
+                </div>
+                <h4>Andromeda Galaxy</h4> 
+                <p>The Andromeda Galaxy, also known as M31, is the closest large galaxy to the Milky Way and can be seen from Earth. It is also spiral in shape and is part of the same group of galaxies as the Milly Way, known as the Local Group. The center of the galaxy is located about 2.54 million light-years from Earth. The Andromeda has at least two spiral arms and has a mass of about 1230 million solar mass. While Andromeda is larger than the Milky Way, it is believed that the Milky Way is more massive because it contains more dark matter. The Andromeda Galaxy is approaching the Milky Way at approximately 100 kilometers per second and is expected to collide with the Milky Way in about 4.5 billion years, resulting in a giant elliptical galaxy. When scientists mean they will collide, it is not exactly the same as bumping heads together. In fact, if we were witnessing the collision, we wouldn't even notice that it was happening due to the very large empty gaps in space. 
+                    <a href = "https://space-facts.com/galaxies/andromeda/" title = "Accessed January 2, 2020" target = "_blank">[3]</a></p>
+                <div class = "articleimage">
+                    <img src = "images/explore_the_universe_galaxies_andromeda.jpg" alt = "Andromeda Galaxy" title = "Photo by Bryan Goff on Unsplash"> 
+                </div>
+
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/explore_the_universe_galaxies.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!--YouTube -->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qnYCpQyRp-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+                
+                <!-- Back Button -->
+                <br><br>
+                <div class = "return"> 
+                    <a href = "explore_the_universe.html"><button>Return</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

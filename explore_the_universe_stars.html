@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<!-- Explore the Universe Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Explore the Universe - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+        
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a class ="active" href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>EXPLORE THE UNIVERSE</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>Stars</h3>
+                <strong>Published December 2019</strong>
+                <div class = "articleimage">
+                    <img src = "images/explore_the_universe_stars.jpg" alt = "Sun Close up Burning" title = "Sun Fireball /The New York Times">
+                </div>
+                <p>Stars are large sphere-like bodies made of plasma, mainly consisting of hydrogen and helium. The process in which stars fuse hydrogen in their cores releases energy, radiating heat and light to space. The closest star to Earth is the Sun, which is approximately 4.5 billion years. It is estimated that there are over 100 billion stars in the Milky Way Galaxy. However, only about 9096 stars are visible to the naked eye in the whole sky; other, fainter stars need to be viewed through a telescope. The larger a star is, the shorter its lifespan. A massive star may only live for a few ten million years while a dwarf star will shine for billions of years. When looking at a star, you are actually seeing how it looked in the past, pertaining to its distance in space from you. The Sun being the closest star to Earth appears as it was 8.5 minutes ago, while the view of Sirius, the brightest star in the sky, is over 8 years old. 
+                    <a href = "https://space-facts.com/stars/" title = "Accessed December 30, 2019" target = "_blank">[1]</a>
+                </p>
+                <p>Stars are born within nebula, which are hydrogen-based clouds of dust. Over the course of many years, gravity can cause pockets of matter inside the nebula to collapse under its own weight, forming a spinning, contracting mass of gas known as a protostar. As protostars get smaller, the pressure and temperature of the star increases. Millions of years later, the core temperature will reach about 27 million degrees Fahrenheit, or 15 million degrees Celsius, and nuclear fusion begins. Nuclear fusion ignites the core and the star enters the main sequence stage, where it exists in a stable state converting hydrogen to helium and emit immense amounts of energy. The average lifespan of a star ranges from tens of millions of years to billions of years, most of which will be spent in the main sequence stage. When stars run out of hydrogen to fuse, they switch to fusing helium and then carbon which releases more energy than fusing hydrogen, causing the star to heat up. The rise in temperature causes it to expand and envelop any nearby planets, stars or other objects in space. Stars the size of the Sun will continue expanding until its outer atmosphere blows away and creates an expanding cloud of gas around the star. The star will then slowly shrink and cool until it becomes a white dwarf. Stars larger than the Sun will continue the fusion process until eventually their core collapses and the outer layers collapse into the core causing a catastrophic explosion known as a supernova.
+                    <a href = "https://www.nationalgeographic.com/science/space/universe/stars/" title = "Accessed December 30, 2019" target = "_blank">[2]</a>
+                </p>
+                  
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/explore_the_universe_stars.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!--YouTube -->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PM9CQDlQI0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+                
+                <!-- Back Button -->
+                <br>
+                <div class = "return"> 
+                    <a href = "explore_the_universe.html"><button>Return</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>

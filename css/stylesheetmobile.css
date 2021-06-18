@@ -1,0 +1,188 @@
+@media only screen and (max-width: 2000px) {
+    /* Adjusting text height */
+    .banner{
+        height:250px;
+    }
+    .introtext{
+        padding-top:5px;
+        height: 235px;
+    }
+}
+
+@media only screen and (max-width: 1365px) {
+    /* Slight shift in navigation bar due to look more visually appealing*/
+    .navigation {
+        padding-left: 0%;
+    }
+    .searchBar{
+        margin-right: 0%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    /* Adjusting text height */
+    .banner{
+        height:310px;
+    }
+    .introtext{
+        padding-top:5px;
+        height: 295px;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    /* Header */
+    h1{
+        font-size: 48px;
+    }
+
+    header{
+        height: 100px;
+    }
+
+    /* Not justify all text except articles*/
+    .body p{
+        text-align: left;
+    }
+
+    .article_information p{
+        text-align: justify;
+    }
+    /* Reduce height on navigation bar items*/
+    .navigation a {
+        padding: 10px 16px;
+    }
+
+    /* New line for each navigational button*/
+    .navigation a{
+        float:none;
+    }
+
+    /* clear the indent on left side*/
+    .navigation {
+        padding-left: 0px;
+    }
+
+    /* Center the search bar*/
+    .searchBar {
+        float:unset;
+        display: block;
+        text-align: center;
+        margin:auto;
+    }
+
+    /* Remove previous margins*/
+    .searchBar button{
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    /* Remove previous margins*/
+    .searchBar input[type=text] {
+        margin-right: unset;
+        margin-left:unset;
+        width: 70%;
+    }
+
+    /* Changing the Banner properties*/
+    .banner{
+        margin:5px;
+    }
+
+    /* Adjusting text height */
+    .introtext{
+        padding-top:5px;
+        height: 295px;
+    }
+
+    /* Body width is being reduced to help fit material*/
+    .body{
+        padding: 5px;
+    }
+
+    /* Home page stuff */
+
+    .homelayout{
+        width:100%;
+        height:auto;
+    }
+
+    .home_images img{
+        max-width:100%;
+        margin:auto;
+    }
+    
+    /*Decreasing banner text*/
+    .bannersmaller h2{
+        font-size: 30px;
+    }
+
+    .bannersmaller .page_title {
+        padding-top: 2px;
+    }
+
+    /*Article Selector*/
+    .articles{
+        display:block;
+    }
+
+    /* About us*/
+    .column{
+        column-count:1;
+    }
+
+    /*Scroll to top button*/
+    #topOfPage{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* Adjusting text height */
+    .banner{
+        height:350px;
+    }
+    .introtext{
+        padding-top:5px;
+        height: 335px;
+    }
+
+    /*Decreasing banner text*/
+    .banner_3 h2{
+        font-size: 30px;
+        word-spacing: 100vw;
+    }
+
+    .banner_3 .page_title {
+        padding-top: 2px;
+    }
+
+    .homelayout p{
+        height:unset;
+    }
+}
+@media only screen and (max-width: 398px) {
+    
+    /* To Fit the Header*/
+    header{
+        height: 150px;
+    }
+
+    h1{
+        margin-top: 12px;
+        margin-bottom:12px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    /* Adjusting text height */
+    .banner{
+        height:400px;
+    }
+    .introtext{
+        padding-top:5px;
+        height: 385px;
+    }
+}

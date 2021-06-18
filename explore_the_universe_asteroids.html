@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- Explore the Universe Page -->
+<html lang="en">
+    <head> 
+        <!--Metadata-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of Page-->
+        <title> Explore the Universe - Cosmic Universe </title>
+        <!-- Stylesheet-->
+        <link rel="stylesheet" href="css/stylesheet.css"> 
+        <link rel="stylesheet" href="css/stylesheetmobile.css"> 
+        <link rel="stylesheet" href="css/stylesheetgame.css"> 
+        <!--Scripts-->
+        <script type="text/javascript" src="https://kit.fontawesome.com/b8d70f19ac.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/myScript.js"></script>
+        <script type="text/javascript" src="js/myGame.js"></script>
+        <script type="text/javascript" src="js/mySearch.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/myFadeImages.js"></script>
+        <script type="text/javascript" src="js/myScrollToTop.js"></script>
+    </head>
+    <body>
+        <!-- Facebook buttons -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
+        <header>
+            <h1> Cosmic Universe </h1>
+        </header>
+        
+        <!-- Navigational Links-->
+        <div class = "navigation">   
+            <a href= "index.html" > Home </a>
+            <a href= "recent_events.html">  Recent Events </a>
+            <a href= "historical_progression.html"> Historical Progression </a> 
+            <a class ="active" href= "explore_the_universe.html"> Explore the Universe </a>
+            <a href= "future_events.html"> Future Events </a>
+            <a href= "gallery.html"> Gallery </a>
+            <a href= "about_us.html"> About Us </a>
+
+            <!-- Search Bar-->
+            <div class = "searchBar">
+                <form action = "search.html"> 
+                    <input type="text" id="searchBar" placeholder="Search..."/><button onclick="saveVariable()" id = "searchButton"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Article with References as Superscripts-->
+        <hr>
+        <div class="body">
+            <div class = "banner_2 bannersmaller">
+                <div class = "page_title">
+                    <h2>EXPLORE THE UNIVERSE</h2>
+                </div>
+            </div>
+            <div class = "article_information">
+                <h3>Asteroids</h3>
+                <strong>Published December 2019</strong>
+                <div class = "articleimage">
+                    <img src = "images/explore_the_universe_asteroids.jpg" alt = "Asteroid Floating in Space" title = "Universe Planet Sky / CharlVera / Pixabay">
+                </div>
+                <p>Asteroids are small bodies of rock or metal that orbit the Sun. There are hundreds of thousands of asteroids in our solar system that we know about, and quite possibly much more that are roaming the galaxy. Asteroids can range in size significantly, from less than 10 feet to over 100 kilometers. Though most of the asteroids are quite small, there has so far been 200 known asteroids to exceed this size. The majority of the asteroids in our Solar System lie between the outer planets and the inner planets known as the Asteroid Belt. The first ever asteroid to be discovered was called Ceres, and it was found in the year 1801 by Giuseppe Piazzi. The asteroid was initially considered to be a new planet, until other asteroids were also found later, and realized that they don't share many similar features with the other planets. Asteroids are mostly irregular in shape, because they are relatively small in comparison to planets, so they don't exert enough gravitational pull to become a sphere-like shape.
+                <a href = "https://theplanets.org/asteroids/" title = "Accessed January 2, 2020" target = "_blank">[1]</a></p>
+                
+                <h4>How an Asteroid put an end to the Dinosaurs</h4>
+                <p>Dinosaurs were believed to have roamed the Earth millions of years ago. This period in the Earth's life, known as the Mesozoic era, was a period of time between 252 million years ago and 65 million years ago. 
+                    <a href = "https://www.livescience.com/38596-mesozoic-era.html" title = "Accessed January 2, 2020" target = "_blank">[2]</a>
+                    This era was also known as the age of the dinosaurs. These creatures were the Earths most dominant living things to ever exist. Because of their dominance, they were able to have such a long reign over Earth for a very long period of time. The environmental changes that occurred on the planet were regional or gradual, and this allowed dinosaurs to adapt or migrate in order to continue to survive. However, scientists believe that about 65 million years ago, an asteroid impacted the earth and wiped out almost all living creatures at that point. The asteroid was believed to be roughly 10 km in diameter and it was large enough to create a huge explosion and a crater that was about 180km in diameter. The after effects of the impact caused debris and dust into the atmosphere, which changed the climate tremendously, and this led to the extinction of the dinosaurs, as well as 75% of all living creatures that lived at the time.
+                    <a href = "https://www.psi.edu/epo/ktimpact/ktimpact.html" title = "Accessed January 2, 2020" target = "_blank">[3]</a></p>
+
+                <h4>Evade the Asteroids</h4>
+                <p id = "gamePretext">Try to dodge the asteroids below! Use the Up and Down arrow keys or the W and S keys on your keyboard to evade asteroids, and use the Spacebar key to shoot missiles. </p>
+                <p id = "gameUnavailable"> Sorry! Your device is unable to support the game due to insuffient screen size, please try on a larger device!</p>
+
+                <!-- Evade the Asteroid Game-->
+                <div id = "gamecanvas"> 
+                    <div id = "ship"></div>
+                    <div id = "missiles"></div> 
+                    <div id = "asteroids"></div>
+                    <div id = "startGame"><button id = "restart" onclick="startGame()">START GAME</button></div>
+                    <p id = "score"></p>
+                    <p id = "missilecount"></p>
+                </div>
+
+                </br>
+                </br>
+
+                <!-- Facebook like/share buttons -->
+                <div class="fb-like" data-href="http://student.athabascau.ca/~anujanpr/COMP266/Unit7/explore_the_universe_asteroids.html" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+                <br>
+                <br>
+
+                <!--YouTube -->
+                <div class= "iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iy19nHTVLEY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <!-- Top of Page button -->
+                <button id = "topOfPage"><i class="fas fa-angle-up fa-2x"></i></button>
+                
+                <!-- Back Button -->
+                <br>
+                <div class = "return"> 
+                    <a href = "explore_the_universe.html"><button>Return</button></a>
+                </div>
+            </div>
+        </div>
+        
+        <!--Page footer-->
+        <hr/>
+        <footer class="footer">
+            <p>Copyright &copy; 2019, <em>Cosmic Universe</em></p>
+            <p>Created by Anujan Premkumar</p>
+            <p id = "updated"></p>
+        </footer>
+
+        <script>
+            date();
+        </script>
+    </body>
+</html>
